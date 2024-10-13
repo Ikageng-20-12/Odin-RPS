@@ -9,18 +9,36 @@
 <body>
     <div class="maincontainer">
         <div class="first_container">
+            <h1>It's just rock paper scissors</h1>
+            <div class="letter_displayer">
+                <p id="letterDisplay">✊📃✂️</p>
+            </div>
+            <div class="button_cont">
+                <button id="startButton">Start</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+        <div class="middle_container">
+            <p id="comments">Let's Go!!</p>
         </div>
         <div class="second_container">
             <div class="seperator">
                 <p>Computer</p>
-                <div></div>
+                <div class="score" id="computerScore">0</div>
+                <div class="choice" id="computerChoice">P</div>
             </div>
             <div>
                 <p>Player</p>
-                <div></div>
+                <div class="score" id="playerScore">0</div>
+                <div class="choice">
+                    <button id="rockButton">Rock</button>
+                    <button id="paperButton">Paper</button>
+                    <button id="scissorsButton">Scissors</button>
+                </div>
             </div>
         </div>
     </div>
     <script src="gamelogic.js"></script>
+    <script src="buttonhandler.js"></script>
 </body>
 </html>

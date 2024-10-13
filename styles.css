@@ -1,27 +1,50 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 .maincontainer {
     display: flex;
     flex-direction: column;
     height: 950px;
-    
 }
 
 .first_container {
-    background-color: rgba(219, 222, 224, 0.87);
+    background-color: rgba(1, 13, 21, 0.87);
     width: 100%;
-    height: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
 
+.first_container h1 {
+    
+    color: white;
+    font-size: 2.5em;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+.first_container div button{
+    background-color: rgba(1, 13, 21, 0.87);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    
+    
+}
 .second_container {
     background-color: #1DA4D6;
     width: 100%;
     height: 30%;
     display: flex;
-    
 }
 
 .second_container div {
@@ -29,23 +52,86 @@ body{
     align-items: center;
     width: 50%;
     height: 100%;
-
+    justify-content: space-around;
+    padding: 0 20px;
 }
 
 .second_container div p {
     color: white;
     font-size: 3em;
-    margin-left: 20px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.second_container .score {
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0 20px;
+}
+
+.second_container .choice {
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0 20px;
+}
+
+.second_container .choice button {
+    background-color: #1DA4D6;
+    color: white;
+    font-size: 0.5em;
+    font-weight: bolder;
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.second_container .choice button:hover {
+    background-color: white;
+    color: #1DA4D6;
+}
+
+.seperator {
+    border-right: 1px solid white;
+}
+
+.middle_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.middle_container p {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgb(176, 173, 173);
+    font-style: italic;
+}
+
+.letter_displayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 20%;
+    width: 10%;
+    border-radius: 2em;
+}
+
+.letter_displayer p {
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
 }
-.second_container div div {
-    background-color: aliceblue;
-    border-radius: 50%;
-    width: 50px; 
-    height: 50px; 
-}
-.seperator{
-    border-right: 1px solid white;
+.button_cont{
+
     display: flex;
-    justify-items: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
 }
