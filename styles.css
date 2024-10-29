@@ -6,8 +6,9 @@ body {
 .maincontainer {
     display: flex;
     flex-direction: column;
-    height: 950px;
+    height: 650px;
 }
+
 
 .first_container {
     background-color: rgba(1, 13, 21, 0.87);
@@ -75,6 +76,7 @@ body {
     font-size: 2em;
     font-weight: bolder;
     margin: 0 20px;
+    
 }
 
 .second_container .choice button {
@@ -119,7 +121,7 @@ body {
     align-items: center;
     background-color: white;
     height: 20%;
-    width: 10%;
+    width: 15%;
     border-radius: 2em;
 }
 
@@ -135,3 +137,4 @@ body {
     align-items: center;
     width: 30%;
 }
+
